@@ -56,7 +56,7 @@ export default function OrdersPanel() {
         <div className="relative w-full sm:w-[400px]">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
-            placeholder="Search Order"
+            placeholder="Procurar pedido"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="pl-9"
@@ -70,7 +70,7 @@ export default function OrdersPanel() {
           }}
         >
           <Plus className="h-4 w-4 mr-2" />
-          New Order
+          Novo Pedido
         </Button>
       </div>
 
@@ -79,9 +79,9 @@ export default function OrdersPanel() {
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">ID</TableHead>
-              <TableHead>Name</TableHead>
-              <TableHead className="hidden md:table-cell">Address</TableHead>
-              <TableHead>Date</TableHead>
+              <TableHead>Nome</TableHead>
+              <TableHead className="hidden md:table-cell">Endereço</TableHead>
+              <TableHead>Data</TableHead>
               <TableHead className="text-right">Total</TableHead>
               <TableHead className="w-[100px]"></TableHead>
             </TableRow>
@@ -116,7 +116,7 @@ export default function OrdersPanel() {
             {filteredOrders.length === 0 && (
               <TableRow>
                 <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
-                  No orders found
+                  Nenhum pedido encontrado
                 </TableCell>
               </TableRow>
             )}

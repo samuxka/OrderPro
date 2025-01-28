@@ -92,3 +92,63 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@media screen and (max-width:425px) {
+  .fisica-head,
+  .fisica-mid{
+    @apply flex flex-col
+  }
+
+  .address{
+    @apply grid grid-rows-8
+  }
+
+  .address .cep{
+    @apply row-start-1 col-span-full
+  }
+
+  .address .end{
+    @apply row-start-2 col-span-full
+  }
+
+  .address .num{
+    @apply row-start-3 col-span-full
+  }
+
+  .address .uf{
+    @apply row-start-4 col-span-full
+  }
+
+  .address .ci{
+    @apply row-start-5 col-span-full
+  }
+
+  .address .bairro{
+    @apply row-start-6 col-span-full
+  }
+
+  .address .comp{
+    @apply row-start-7 col-span-full
+  }
+
+  .address .pr{
+    @apply row-start-8 col-span-full
+  }
+
+  .prod{
+    @apply grid grid-cols-6 grid-rows-3
+  }
+
+  .prod .prod-name{
+    @apply row-start-1 col-span-full
+  }
+
+  .prod .price,
+  .prod .quantity{
+    @apply col-span-3 row-start-2
+  }
+
+  .prod .btn{
+    @apply row-start-3 col-span-full
+  }
+}
