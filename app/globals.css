@@ -96,7 +96,7 @@ body {
 @media screen and (max-width:500px) {
   .fisica-head,
   .fisica-mid{
-    @apply flex flex-col
+    @apply flex flex-col w-full
   }
 
   .address{
