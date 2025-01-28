@@ -93,7 +93,7 @@ body {
   }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:445px) {
   .fisica-head,
   .fisica-mid{
     @apply flex flex-col
